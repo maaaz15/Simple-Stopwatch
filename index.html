@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col justify-center items-center bg-black">
+        <div class="text-white font-bold text-6xl font-inter pb-20">Stopwatch</div>
+        <div class="text-white text-8xl font-bold font-inter pb-20" id="timeDisplay">00:00:00</div>
+        <div class="flex justify-center space-x-12">
+            <button class="btn-start bg-green-500 hover:bg-green-600 text-white px-6 py-4 text-xl font-bold font-inter rounded-lg" id="start">Start</button>
+            <button class="btn-stop bg-red-500 hover:bg-red-600 text-white px-6 py-4 text-xl font-bold font-inter rounded-lg" id="pause">Pause</button>
+            <button class="btn-reset bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 text-xl font-bold font-inter rounded-lg" id="reset">Reset</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
