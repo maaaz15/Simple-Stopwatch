@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Inter', sans-serif;
+    background-color: black;
 }
 
 .btn-start, .btn-stop, .btn-reset {
@@ -10,4 +11,21 @@
 
 .btn-start:hover, .btn-stop:hover, .btn-reset:hover {
     filter: brightness(120%);
+}
+
+@media (max-width: 768px) {
+    .main-container{
+        min-height: 80vh;
+    }
+    .title{
+        font-size: x-large;
+        padding-bottom: 10%;
+    }
+    #timeDisplay{
+        padding-bottom: 10%;
+    }
+    .btn-start, .btn-stop, .btn-reset {
+        font-size: small;
+        padding: 6px 10px;
+    }
 }
